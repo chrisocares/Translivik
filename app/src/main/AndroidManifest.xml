@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.urp.translivik" >
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <!--
+      IMPORTANT: Change "com.parse.starter.permission.C2D_MESSAGE" in the lines below
+      to match your app's package name + ".permission.C2D_MESSAGE".
+    -->
+    <permission android:protectionLevel="signature"
+        android:name="com.urp.translivik.permission.C2D_MESSAGE" />
+    <uses-permission android:name="com.urp.translivik.permission.C2D_MESSAGE" />
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".datefragment"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.datefragment" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+        android:name=".Menu"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.Menu" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+
+        <activity
+            android:name=".Detalles_servicioP"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Detalles_servicioP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Detalles_servicio"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Detalles_servicio" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Detalles_vehiculo"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Detalles_vehiculo" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Detalles_vehiculoP"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Detalles_vehiculoP" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".ModificarCotizacion"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ModificarCotizacion" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Cambiar_pass"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Cambiar_pass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Admin_Cambiar_pass"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Admin_Cambiar_pass" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ChoferRutasWaze"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.ChoferRutasWaze" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Consultar_trasladistas"
+            android:label="@string/app_name" android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.Consultar_trasladistas" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Main_admin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Main_admin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Consultar_servicios"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Consultar_servicios" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".Muestrarutas"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Muestrarutas" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivityAdmin"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MainActivityAdmin" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+        android:name=".Incidencias"
+        android:label="@string/app_name" >
+        <intent-filter>
+            <action android:name="android.intent.action.Incidencias" />
+
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+    </activity>
+        <activity
+            android:name=".AdminChofer"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.AdminChofer" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminTrasladistas"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.AdminTrasladistas" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AdminServiciostodos"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.AdminServiciostodos" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Adminserviciospendientes"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Adminserviciospendientes" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Adminincidencias"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.Adminincidencias" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

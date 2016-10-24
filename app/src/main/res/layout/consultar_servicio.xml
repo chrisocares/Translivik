@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".Consultar_servicios"
+    android:background="#ff79aeff"
+    android:clickable="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="SELECCIONE UN SERVICIO"
+        android:id="@+id/txtbienvenida"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_alignBottom="@+id/txtbienvenida"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view7" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/spinnerruta"
+        android:layout_below="@+id/txtbienvenida"
+        android:spinnerMode="dialog"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp" />
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:layout_below="@+id/spinnerruta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:id="@+id/lineav"
+        android:layout_height="fill_parent"
+        android:weightSum="1"
+        android:layout_alignTop="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Fecha"
+            android:id="@+id/textView"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp" />
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdatetime"
+            android:layout_below="@+id/textView4"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Servicio"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/txtservicio"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtruta"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tipo del Servicio"
+            android:id="@+id/textView4"
+            android:layout_below="@+id/txtruta"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtservicio"
+            android:layout_below="@+id/spinnerruta"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Cuenta"
+            android:id="@+id/textView86"
+            android:layout_below="@+id/txtdatetime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtcuenta"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="PAX"
+            android:id="@+id/textView5"
+            android:layout_below="@+id/txtdatetime"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtpax"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Numero de Pasajeros"
+            android:id="@+id/textView7"
+            android:layout_below="@+id/txtpax"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtnropasajeros"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center"/>
+
+        <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Trasladista"
+        android:id="@+id/textView6"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="10dp" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1"
+            android:layout_alignTop="@+id/scrollView"
+            android:layout_alignLeft="@+id/scrollView"
+            android:layout_alignStart="@+id/scrollView"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp">
+
+        <TextView
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttrasladista"
+            android:layout_below="@+id/textView5"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp" />
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ibtrasladista"
+                android:src="@drawable/chofer"
+
+                android:background="#ff79aeff" />
+            </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Vuelo"
+            android:id="@+id/textViewtimeorigen"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtvuelo"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="No registrado"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Días y Horas"
+            android:id="@+id/textViewtimedestino"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtdiashoras"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:text="No registrado"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Observaciones"
+            android:id="@+id/textViewobs"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginLeft="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtcomentario"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:layout_margin="5dp"
+            android:textAlignment="center"
+            android:gravity="center" />
+
+        <Button
+
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Incidencias"
+            android:id="@+id/btnincidencias"
+            android:layout_below="@+id/scrollView"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:background="#ff0068ff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Finalizar Servicio"
+            android:id="@+id/btnfinalizar"
+            android:layout_below="@+id/scrollView"
+            android:layout_toRightOf="@+id/btnincidencias"
+            android:layout_alignRight="@+id/scrollView"
+            android:layout_alignEnd="@+id/scrollView"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:background="#ff0068ff"
+            android:layout_margin="5dp"/>
+
+        <Button
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="Trazar Ruta"
+            android:id="@+id/btntrazar"
+            android:layout_below="@+id/btnincidencias"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignRight="@+id/btnfinalizar"
+            android:layout_alignEnd="@+id/btnfinalizar"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:background="#ff0068ff"
+            android:layout_margin="5dp"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/set1"
+            android:layout_below="@+id/btntrazar"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="#ff79aeff"
+           />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/atras"
+            android:textColor="#ff79aeff"/>
+  </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtsdcs"
+        android:layout_alignBottom="@+id/view7"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff79aeff"/>
+
+
+
+</RelativeLayout>

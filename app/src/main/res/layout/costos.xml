@@ -1,0 +1,136 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:gravity="center_vertical|center_horizontal"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#ff79aeff"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:weightSum="1"
+    android:orientation="vertical">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="MODIFICAR COSTOS"
+        android:id="@+id/textView8"
+        android:textColor="#ffffffff"
+
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.82"
+        android:weightSum="1"
+        android:layout_marginTop="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Precio del Servicio"
+            android:id="@+id/textView17" />
+
+        <EditText android:id="@+id/txtps" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Ingrese el precio del servicio"
+            android:singleLine="true"
+            android:inputType="numberDecimal"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Adicional"
+            android:id="@+id/textView19" />
+
+        <EditText
+            android:id="@+id/txta" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Ingrese el adicional"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:imeActionLabel="@string/action_sign_in"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1" android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="5dp" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Descuento"
+            android:id="@+id/textView21" />
+
+        <EditText
+            android:id="@+id/txtd" android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:hint="Ingrese el descuento"
+            android:inputType="numberDecimal"
+            android:ems="10"
+            android:imeActionLabel="@string/action_sign_in"
+            android:imeOptions="actionUnspecified"
+            android:maxLines="1" android:singleLine="true"
+            android:layout_marginBottom="10dp"
+            android:textColorHint="#ffffffff"
+            android:textColor="#ffffffff"
+            android:fontFamily="sans-serif-light"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Precio Total"
+            android:id="@+id/textviewnn" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/txttotal"
+            android:layout_below="@+id/textView79"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/scrollView5"
+            android:layout_alignStart="@+id/scrollView5"
+            android:layout_marginBottom="5dp"
+            android:layout_alignRight="@+id/txtsedev"
+            android:layout_alignEnd="@+id/txtsedev"
+            android:layout_marginRight="10dp"
+            android:height="33dp"
+            android:background="@drawable/shape"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:layout_marginLeft="10dp" />
+
+        <Button android:id="@+id/btnmodificar" style="?android:textAppearanceSmall"
+            android:layout_width="200dp" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="MODIFICAR"
+            android:textStyle="bold"
+            android:textColor="#ffffffff"
+            android:background="#ff0068ff"
+            android:layout_marginLeft="80dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.04"
+        android:weightSum="1"></LinearLayout>
+</LinearLayout>

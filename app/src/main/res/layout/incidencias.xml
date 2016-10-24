@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ff79aeff"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="REGISTRE SU INCIDENCIA"
+        android:id="@+id/textView8"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffffff"
+
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/spinnerruta"
+        android:layout_below="@+id/textView9"
+        android:spinnerMode="dialog"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Seleccione el tipo de incidencia"
+        android:id="@+id/textView9"
+        android:layout_below="@+id/textView8"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Describa la incidencia"
+        android:id="@+id/textView10"
+        android:layout_below="@+id/spinnerruta"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginLeft="10dp" />
+
+    <Button
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        android:id="@+id/btnwaze"
+        android:textStyle="bold"
+        android:textColor="#ffffffff"
+        android:background="#ff0068ff"
+        android:layout_marginTop="180dp"
+        android:layout_below="@+id/textView10"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView11"
+        android:layout_below="@+id/btnwaze"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="81dp"
+        android:textColor="#ffBE80FF"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView12"
+        android:layout_below="@+id/textView11"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ff79aeff"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView15"
+        android:layout_below="@+id/textView12"
+        android:layout_alignLeft="@+id/btnwaze"
+        android:layout_alignStart="@+id/btnwaze"
+        android:layout_alignRight="@+id/btnwaze"
+        android:layout_alignEnd="@+id/btnwaze"
+        android:textColor="#ff79aeff"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtDescripcion"
+        android:singleLine="true"
+        android:layout_above="@+id/textView11"
+        android:layout_alignLeft="@+id/textView10"
+        android:layout_alignStart="@+id/textView10"
+        android:layout_alignRight="@+id/spinnerruta"
+        android:layout_alignEnd="@+id/spinnerruta"
+        android:layout_marginBottom="150dp" />
+
+</RelativeLayout>

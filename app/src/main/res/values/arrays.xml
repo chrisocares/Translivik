@@ -1,0 +1,7 @@
+<resources>
+    <string-array name="sedes">
+        <item>Seleccione una Sede</item>
+        <item>Barranco</item>
+        <item>Cuzco</item>
+    </string-array>
+</resources>

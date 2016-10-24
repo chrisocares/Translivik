@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".Menu"
+    android:background="#ff79aeff"
+    android:clickable="true">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/linearLayout4"
+        android:layout_alignEnd="@+id/linearLayout4"
+        android:textSize="35dp"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:layout_marginTop="20dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout4"
+        android:layout_marginTop="120dp">
+
+        <ImageButton
+            android:layout_width="169dp"
+            android:layout_height="match_parent"
+            android:id="@+id/btnconsultar"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:background="#4CF621"
+            android:src="@drawable/servc" />
+
+        <ImageButton
+            android:layout_width="178dp"
+            android:layout_height="162dp"
+            android:id="@+id/btntrasladista"
+            android:background="#4C456D"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/chofce" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        android:layout_below="@+id/linearLayout4"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/linearLayout5">
+
+        <ImageButton
+            android:layout_width="169dp"
+            android:layout_height="156dp"
+            android:id="@+id/btnsalir"
+            android:layout_marginTop="5dp"
+            android:background="#F68821"
+            android:src="@drawable/salir" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="156dp"
+            android:id="@+id/imageButton4"
+            android:layout_marginTop="5dp"
+            android:background="#2C21F6"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/passw" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text=""
+        android:id="@+id/txtsedetrans"
+        android:textColor="#ff79aeff"
+        android:layout_below="@+id/linearLayout5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

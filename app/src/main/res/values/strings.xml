@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Translivik</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Login</string>
+    <string name="invalid_email">This email address is invalid</string>
+    <string name="invalid_password">Password is too short</string>
+    <string name="incorrect_password">Password is incorrect</string>
+    <string name="field_required">This field is required</string>
+
+    <string name="title_section1">CONSULTAR SERVICIOS PENDIENTE</string>
+    <string name="title_section2">CONSULTAR HISTORICO</string>
+    <string name="title_section3">CONSULTAR TRASLADISTAS</string>
+    <string name="title_section4">CONSULTAR CHOFER</string>
+    <string name="title_section5">CONSULTAR INCIDENCIAS</string>
+    <string name="title_section6">SALIR</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Settings</string>
+
+    <string name="section_title">LISTA DE</string>
+
+
+
+
+    </resources>

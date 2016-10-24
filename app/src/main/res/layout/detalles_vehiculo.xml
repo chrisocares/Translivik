@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#ff79aeff"
+    android:clickable="true">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="DETALLES DEL VEHICULO"
+        android:id="@+id/textView8"
+        android:layout_marginTop="20dp"
+        android:textColor="#ffffffff"
+
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp" />
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_above="@+id/textView9"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView8"
+        android:id="@+id/view5" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView5"
+        android:layout_below="@+id/view5"
+        android:layout_alignLeft="@+id/textView8"
+        android:layout_alignStart="@+id/textView8"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/textView8"
+        android:layout_alignEnd="@+id/textView8"
+        android:fillViewport="false">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1"
+            android:layout_below="@+id/scrollView5"
+            android:layout_centerHorizontal="true" >
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Descripcion "
+        android:id="@+id/textView49"
+        android:layout_below="@+id/view5"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtdescripcionv"
+        android:layout_below="@+id/textView49"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignRight="@+id/txtplacav"
+        android:layout_alignEnd="@+id/txtplacav"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Placa"
+        android:id="@+id/textView66"
+        android:layout_below="@+id/txtdescripcionv"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="5dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtplacav"
+        android:layout_below="@+id/textView66"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/txtmarcav"
+        android:layout_alignEnd="@+id/txtmarcav"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Marca"
+        android:id="@+id/textView69"
+        android:layout_below="@+id/txtplacav"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtmarcav"
+        android:layout_below="@+id/textView69"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/txtmodelov"
+        android:layout_alignEnd="@+id/txtmodelov"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Modelo"
+        android:id="@+id/textView71"
+        android:layout_below="@+id/txtmarcav"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtmodelov"
+        android:layout_below="@+id/textView71"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignRight="@+id/txtsedev"
+        android:layout_alignEnd="@+id/txtsedev"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Año de Fabricacion"
+        android:id="@+id/textView73"
+        android:layout_below="@+id/txtmodelov"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtanov"
+        android:layout_below="@+id/textView73"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/txtmodelov"
+        android:layout_alignEnd="@+id/txtmodelov"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Capacidad Maxima de Pasajeros"
+        android:id="@+id/textView75"
+        android:layout_below="@+id/txtanov"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtcapacidadv"
+        android:layout_below="@+id/textView75"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/txtanov"
+        android:layout_alignEnd="@+id/txtanov"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tipo de Vehículo"
+        android:id="@+id/textView77"
+        android:layout_below="@+id/txtcapacidadv"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttipov"
+        android:layout_below="@+id/textView77"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:layout_alignRight="@+id/txtsedev"
+        android:layout_alignEnd="@+id/txtsedev"
+        android:layout_marginRight="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Color"
+        android:id="@+id/textView79"
+        android:layout_below="@+id/txttipov"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txttotal"
+        android:layout_below="@+id/textView79"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_marginBottom="5dp"
+        android:layout_alignRight="@+id/txtsedev"
+        android:layout_alignEnd="@+id/txtsedev"
+        android:layout_marginRight="10dp"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Sede"
+        android:id="@+id/textView81"
+        android:layout_below="@+id/txttotal"
+        android:layout_alignLeft="@+id/scrollView5"
+        android:layout_alignStart="@+id/scrollView5"
+        android:layout_alignRight="@+id/scrollView5"
+        android:layout_alignEnd="@+id/scrollView5"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtsedev"
+        android:layout_below="@+id/textView81"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignLeft="@+id/textView81"
+        android:layout_alignStart="@+id/textView81"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="10dp"
+        android:height="33dp"
+        android:background="@drawable/shape"
+        android:textAlignment="center"
+        android:gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/iddv"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/textView8"
+        android:textSize="25dp"
+        android:textColor="#ff79aeff" />
+
+</RelativeLayout>

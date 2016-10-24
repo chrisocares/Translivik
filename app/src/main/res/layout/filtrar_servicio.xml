@@ -1,0 +1,540 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"  tools:context=".Busqueda_filtros"
+    android:background="#ff79aeff"
+    android:clickable="true">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="BUSQUEDA DE SERVICIO"
+        android:id="@+id/txtbienvenida"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="20dp"
+        android:textColor="#ffffffff"
+        android:textStyle="bold"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:layout_alignBottom="@+id/txtbienvenida"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/view3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Filtrar servicio por :"
+        android:id="@+id/textView39"
+        android:layout_below="@+id/view3"
+        android:layout_alignLeft="@+id/txtbienvenida"
+        android:layout_alignStart="@+id/txtbienvenida"
+        android:layout_alignRight="@+id/txtbienvenida"
+        android:layout_alignEnd="@+id/txtbienvenida"
+        android:layout_marginTop="10dp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:background="#000"
+        android:id="@+id/view4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/radioSex"
+        android:layout_marginTop="5dp" />
+
+    <RadioGroup
+        android:id="@+id/radioSex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView39"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39">
+    <RadioButton
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:text="Tipo de Servicio"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/textView39"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:text="Estado de Servicio"
+        android:id="@+id/radioButton2"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignLeft="@+id/radioButton"
+        android:layout_alignStart="@+id/radioButton"
+        android:checked="false" />
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha de Servicio"
+        android:id="@+id/radioButton3"
+        android:layout_below="@+id/radioButton2"
+        android:layout_alignLeft="@+id/radioButton2"
+        android:layout_alignStart="@+id/radioButton2"
+        android:checked="false" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtmodifica1"
+        android:layout_below="@+id/view4"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_alignRight="@+id/textView39"
+        android:layout_alignEnd="@+id/textView39"
+        android:textSize="20dp"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:layout_height="70dp"
+        android:id="@+id/spinner6"
+        android:spinnerMode="dialog"
+        android:background="@drawable/shape"
+        android:layout_below="@+id/txtmodifica1"
+        android:layout_alignLeft="@+id/txtmodifica1"
+        android:layout_alignStart="@+id/txtmodifica1"
+        android:layout_alignRight="@+id/txtmodifica1"
+        android:layout_alignEnd="@+id/txtmodifica1"
+        android:layout_marginRight="10dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/txtmodifica2"
+        android:layout_below="@+id/spinner6"
+        android:layout_alignLeft="@+id/textView39"
+        android:layout_alignStart="@+id/textView39"
+        android:layout_alignRight="@+id/textView39"
+        android:layout_alignEnd="@+id/textView39"
+        android:textColor="#ffffffff"
+        android:fontFamily="sans-serif-light"
+        android:layout_marginTop="5dp" />
+
+    <Spinner
+        android:layout_width="fill_parent"
+        android:id="@+id/spinner7"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/txtmodifica2"
+        android:layout_alignRight="@+id/txtmodifica2"
+        android:layout_alignEnd="@+id/txtmodifica2"
+        android:background="@drawable/shape"
+        android:spinnerMode="dialog"
+        android:layout_height="70dp"
+
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignLeft="@+id/scrollView4"
+        android:layout_alignStart="@+id/scrollView4" />
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView4"
+        android:layout_alignLeft="@+id/spinner6"
+        android:layout_alignStart="@+id/spinner6"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/spinner7"
+        android:layout_alignRight="@+id/txtmodifica2"
+        android:layout_alignEnd="@+id/txtmodifica2"
+        android:layout_marginRight="10dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:weightSum="1"
+            android:layout_below="@+id/spinner6"
+            android:layout_centerHorizontal="true" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Fecha"
+                android:id="@+id/textView40"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView41"
+                android:layout_below="@+id/textView40"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Servicio"
+                android:id="@+id/textView42"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView43"
+                android:layout_below="@+id/textView42"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Tipo de Servicio"
+                android:id="@+id/textView44"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView45"
+                android:layout_below="@+id/textView42"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="File"
+                android:id="@+id/textView46"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView47"
+                android:layout_below="@+id/textView42"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="PAX"
+                android:id="@+id/textView48"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView51"
+                android:layout_below="@+id/textView42"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Numero de Pasajeros"
+                android:id="@+id/textView52"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView53"
+                android:layout_below="@+id/textView52"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Trasladista"
+                android:id="@+id/textView54"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView55"
+                android:layout_below="@+id/textView54"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Vuelo"
+                android:id="@+id/textView56"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView57"
+                android:layout_below="@+id/textView56"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Estado"
+                android:id="@+id/textView58"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView59"
+                android:layout_below="@+id/textView58"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Servicio Externo"
+                android:id="@+id/textView60"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView61"
+                android:layout_below="@+id/textView60"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Vehiculo"
+                android:id="@+id/textView62"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView63"
+                android:layout_below="@+id/textView60"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Chofer"
+                android:id="@+id/textView64"
+                android:layout_alignTop="@+id/scrollView3"
+                android:layout_alignLeft="@+id/scrollView3"
+                android:layout_alignStart="@+id/scrollView3"
+                android:layout_alignRight="@+id/scrollView3"
+                android:layout_alignEnd="@+id/scrollView3"
+                android:textColor="#ffffffff"
+                android:fontFamily="sans-serif-light"
+                android:layout_marginLeft="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView65"
+                android:layout_below="@+id/textView64"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:height="33dp"
+                android:background="@drawable/shape"
+                android:layout_margin="5dp"
+                android:textAlignment="center"
+                android:gravity="center" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
